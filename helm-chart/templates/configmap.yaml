@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.name }}
+  namespace: {{ .Values.name }}
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Dynamic String Example</title>
+    </head>
+    <body>
+        <h1 id="dynamicString">The saved string is dynamic string</h1>
+        <script>
+            // JavaScript code to change the dynamic string
+            var dynamicString = "Wednesday"; // You can set this value dynamically
+            document.getElementById("dynamicString").textContent = dynamicString;
+        </script>
+    </body>
+    </html>
