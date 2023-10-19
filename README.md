@@ -53,6 +53,11 @@ Access the ArgoCD server using Service External IP
 
 ### Run Argocd application
 
+Create a docker secret first
+```
+kubectl -n web-app create secret docker-registry docker-login --docker-server=https://index.docker.io/v1/ --docker-username= --docker-password= --docker-email=
+```
+
 ```
 kubectl apply -f web-app.yaml
 ```
