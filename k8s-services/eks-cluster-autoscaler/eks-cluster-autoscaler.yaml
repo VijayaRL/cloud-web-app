@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::<<AWS_ACCOUNT_ID>>:role/vrledu-dev-node-role
+    eks.amazonaws.com/role-arn: arn:aws:iam::819370969351:role/vrledu-dev-node-role
   labels:
     k8s-addon: cluster-autoscaler.addons.k8s.io
     k8s-app: cluster-autoscaler
