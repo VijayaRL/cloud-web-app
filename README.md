@@ -28,8 +28,8 @@ kubectl apply -f eks-cluster-autoscaler/eks-cluster-autoscaler.yaml
 ### Build and Push the docker image to DockerHub
 
 ```
-docker build -t datawavelabs/apache_webserver:latest .
-docker push -t datawavelabs/apache_webserver:latest
+docker build -t vijayalakshman/apache_webserver:latest .
+docker push -t vijayalakshman/apache_webserver:latest
 ```
 
 ### Install ArgoCD 
