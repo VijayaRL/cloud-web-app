@@ -50,6 +50,9 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```
 
 Access the ArgoCD server using Service External IP
+```
+kubectl -n argocd get svc
+```
 
 ### Run Argocd application
 
@@ -65,5 +68,6 @@ kubectl apply -f web-app.yaml
 ### Access web application 
 
 ```
+kubectl -n web-app get scv
 http://<load-balancer>/index.html
 ```
