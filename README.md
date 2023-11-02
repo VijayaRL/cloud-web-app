@@ -58,6 +58,7 @@ kubectl -n argocd get svc
 
 Create a docker secret first
 ```
+kubectl create ns web-app
 kubectl -n web-app create secret docker-registry docker-login --docker-server=https://index.docker.io/v1/ --docker-username= --docker-password= --docker-email=
 ```
 
